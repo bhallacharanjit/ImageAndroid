@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LaunchCamera"
+    android:background="#000000" >
+
+    <ImageView
+        android:id="@+id/imVCature_pic"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:contentDescription="catured picture"
+        android:src="@drawable/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:text="Image from Camera"
+        android:layout_below="@+id/imVCature_pic"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnCapture"
+        android:layout_alignBottom="@+id/btnCapture"
+        android:layout_toRightOf="@+id/btnCapture"
+        android:layout_alignParentRight="true"
+        android:text="Image from Gallery" />
+
+</RelativeLayout>
